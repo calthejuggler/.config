@@ -297,6 +297,10 @@ nnoremap <S-k> ddk<S-p>
 vnoremap <S-j> d`]pV`]
 vnoremap <S-k> dkP`[V`]
 
+" Convert require to import and vice versa
+nnoremap <leader>cr 0cwconst<esc>/from<CR>cw=<space>require(<esc>lxA<backspace>);<esc>
+nnoremap <leader>ci 0cwimport<esc>f=xifrom<esc>lldwxA<backspace><backspace>;<esc>
+
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
