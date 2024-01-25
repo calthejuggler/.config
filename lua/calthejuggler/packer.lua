@@ -70,15 +70,6 @@ return require('packer').startup(function(use)
 
     use { 'f-person/git-blame.nvim' }
 
-    use { "mfussenegger/nvim-jdtls", ft = { "java" }}
-
     use { "github/copilot.vim" }
-
-    use {
-        "vinnymeller/swagger-preview.nvim",
-        run = "npm install -g swagger-ui-watcher",
-    }
-
-    use 'David-Kunz/jester'
 
 end)
